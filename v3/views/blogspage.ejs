@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+<h1>Welcome to our blogs</h1>
+<div class="row">
+    <% blogs.forEach(function(blog){ %>
+    <div class="col-sm">
+        <div class="card">
+            <img src="<%- blog.image %>" alt="Image Error">
+            <div class="card-body">
+                <h5 class="card-title"><%= blog.name %></h5>
+                <p class="card-text"><%= blog.des.substring(0,100) %>...</p>
+                <a href="/blogs/<%= blog._id %>" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <% }); %>
+</div>
+
+
+
+<%- include("partials/footer") %>

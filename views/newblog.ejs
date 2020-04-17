@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<div class="container">
+    <form class="form-control" action="/blogs" method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="url" placeholder="Image url">
+        <input type="text" name=author placeholder="Author">
+        <input type="text" name="des" placeholder="Description">
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<%- include("partials/footer") %>
